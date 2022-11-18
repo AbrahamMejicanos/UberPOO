@@ -1,16 +1,15 @@
 class Car {
     private Integer id, passenger;
-    private String license, driver;
+    private String license;
+    private Account driver;
 
-    public Car(Integer passenger, String license, String driver){
-        this.passenger = passenger;
+    public Car(String license, Account driver){
         this.license = license;
         this.driver = driver;
     }
 
     public void mostrarDatos(){
         System.out.println("Licencia: " + license);
-        System.out.println("Conductor: " + driver);
-        System.out.println("Para: " + passenger + " pasajeros");
+        System.out.println("Conductor: " + driver.stName());
     }
 }

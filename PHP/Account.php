@@ -1,6 +1,6 @@
 <?php
     class Account{
-        public $id, $document, $email, $password;
+        private $id, $document, $email, $password;
 
         public function __construct($name, $document)
         {

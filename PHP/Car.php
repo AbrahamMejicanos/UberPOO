@@ -1,6 +1,6 @@
 <?php
     class Car{
-        public $id, $driver, $passenger;
+        private $id, $driver, $passenger;
 
         public function __construct($licence, $driver)
         {

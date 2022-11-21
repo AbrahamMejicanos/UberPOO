@@ -7,5 +7,13 @@
             $this->name = $name;
             $this->document = $document;
         }
+
+        public function _getName(){
+            return $this->name;
+        }
+
+        public function _getDocument(){
+            return $this->document;
+        }
     }
 ?>

@@ -10,8 +10,8 @@
 
         public function PrintDataCar(){
             echo "License: {$this->license},
-            Driver Name: {$this->driver->name},
-            Driver Document: {$this->driver->document}";
+            Driver Name: {$this->driver->_getName()},
+            Driver Document: {$this->driver->_getDocument()}";
         }
     }
 ?>

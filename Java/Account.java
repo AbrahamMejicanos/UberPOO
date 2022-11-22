@@ -9,7 +9,7 @@ class Account {
         this.password = password;
     }
 
-    public String stName(){
+    public String gtName(){
         return name;
     }
 }

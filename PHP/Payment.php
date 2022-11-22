@@ -1,5 +1,5 @@
 <?php
     class Payment{
-        public $id;
+        private $id;
     }
 ?>

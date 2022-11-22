@@ -5,9 +5,18 @@ class UberVan extends Car{
     Map<String, Map<Integer, String>> typeCarAccepted;
     ArrayList<String> seatsMaterial;
 
-    public UberVan(String license, Account driver, Integer passenger,Map<String, Map<Integer, String>> typeCarAccepted, ArrayList<String> setasMaterial){
-        super(license, driver, passenger);
-        this.typeCarAccepted = typeCarAccepted;
-        this.seatsMaterial = setasMaterial;
+    public UberVan(String license, Account driver){
+        super(license, driver);
+    }
+
+    @Override
+    public void setPassenger(Integer passenger) {
+        if(passenger >= 1 && passenger <= 6){
+            this.passenger = passenger;
+        }else if(passenger > 6){
+            mensajeError = "No puedes subir mas de 4 pasajeros";
+        }else if(passenger < 1){
+            mensajeError = "El minimo de pasajeros es 1";
+        }
     }
 }
